@@ -1,6 +1,8 @@
 # FORK INFO
 The check for `window.__coverage__` only works if `cy.visit()`-ing between every test, since it is done in the `window:load` event in a `beforeEach()` hook. If a test spec does a single `cy.visit()` in a `before()` hook, the load event handler is not hit; if the `cy.visit()` happens in the first test only, coverage is collected for that test, but not for any others.
 
+I've opened a bug request so hopefully this either gets fixed, or this fork gets merged into the main plugin. https://github.com/cypress-io/cypress/issues/6664
+
 # @cypress/code-coverage [![renovate-app badge][renovate-badge]][renovate-app] [![CircleCI](https://circleci.com/gh/cypress-io/code-coverage.svg?style=svg)](https://circleci.com/gh/cypress-io/code-coverage)
 
 > Saves the code coverage collected during Cypress tests

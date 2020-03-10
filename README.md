@@ -3,6 +3,8 @@ The check for `window.__coverage__` only works if `cy.visit()`-ing between every
 
 I've opened a bug request so hopefully this either gets fixed, or this fork gets merged into the main plugin. https://github.com/cypress-io/cypress/issues/6664
 
+Fixed in @cypress/code-coverage v1.13.0 with similar logic.
+
 # @cypress/code-coverage [![renovate-app badge][renovate-badge]][renovate-app] [![CircleCI](https://circleci.com/gh/cypress-io/code-coverage.svg?style=svg)](https://circleci.com/gh/cypress-io/code-coverage)
 
 > Saves the code coverage collected during Cypress tests
